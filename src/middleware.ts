@@ -27,9 +27,9 @@ async function getRegionMap() {
     const  regions = [
       {
       id: 'reg_01HY70E5X9C0AY6C5GH984V6YR',
-      created_at: '2024-05-18T23:26:20.516Z',
-      updated_at: '2024-05-18T23:26:20.516Z',
-      deleted_at: null,
+      // created_at: '2024-05-18T23:26:20.516Z',
+      // updated_at: '2024-05-18T23:26:20.516Z',
+      // deleted_at: null,
       name: 'EU',
       currency_code: 'eur',
       tax_rate: 0,
@@ -107,10 +107,10 @@ async function getRegionMap() {
       fulfillment_providers: [ { id: 'manual', is_installed: true } ]
     },
       {
-      id: 'reg_01HY70E5Y8625YRMSSKBT74G11',
-      created_at: '2024-05-18T23:26:20.516Z',
-      updated_at: '2024-05-18T23:26:20.516Z',
-      deleted_at: null,
+      // id: 'reg_01HY70E5Y8625YRMSSKBT74G11',
+      // created_at: '2024-05-18T23:26:20.516Z',
+      // updated_at: '2024-05-18T23:26:20.516Z',
+      // deleted_at: null,
       name: 'NA',
       currency_code: 'usd',
       tax_rate: 0,
