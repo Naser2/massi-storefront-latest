@@ -662,7 +662,10 @@ export const listCategories = cache(async function () {
 
   return medusaClient.productCategories
     .list({ expand: "category_children" }, headers)
-    .then(({ product_categories }) => product_categories)
+    .then(({ product_categories }) =>{
+      console.log("PRODUCT-CATEGORIES", product_categories)
+        return   product_categories
+      })
     .catch((err) => {
       throw err
     })
