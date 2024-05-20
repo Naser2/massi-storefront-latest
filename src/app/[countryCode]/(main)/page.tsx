@@ -18,7 +18,7 @@ const getCollectionsWithProducts = cache(
     countryCode: string
   ): Promise<ProductCollectionWithPreviews[] | null> => {
     const { collections } = await getCollectionsList(0, 3)
-
+console.log("GOT HERE =-->"," LAYOUT PAGE")
     if (!collections) {
       return null
     }
@@ -61,6 +61,10 @@ export default async function Home({
 }) {
   const collections = await getCollectionsWithProducts(countryCode)
   const region = await getRegion(countryCode)
+
+  console.log("GOT HERE =--> HOME PAGE")
+  console.log("COLLECTIONS =--> HOME", collections)
+  console.log("CUNTRY CODE=--> HOME", region)
 
   if (!collections || !region) {
     return null
