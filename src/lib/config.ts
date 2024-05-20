@@ -1,5 +1,8 @@
 import Medusa from "@medusajs/medusa-js"
 
+// git rm -r --cached .
+// git add --all .
+// git commit -a -m "Versioning untracked files"
 // Defaults to standard port for Medusa server
 let MEDUSA_BACKEND_URL = process.env.DATABASE_URL || "http://localhost:9000"
 
