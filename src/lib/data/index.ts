@@ -660,15 +660,15 @@ export const listCategories = cache(async function () {
     },
   } as Record<string, any>
 
-  return medusaClient.productCategories
-    .list({ expand: "category_children" }, headers)
-    .then(({ product_categories }) =>{
-      console.log("PRODUCT-CATEGORIES",product_categories)
-        return   product_categories
-      })
-    .catch((err) => {
-      throw err
-    })
+  // return medusaClient.productCategories
+  //   .list({ expand: "category_children" }, headers)
+  //   .then(({ product_categories }) =>{
+  //     console.log("PRODUCT-CATEGORIES",product_categories)
+  //       return   product_categories
+  //     })
+  //   .catch((err) => {
+  //     throw err
+  //   })
 })
 
 export const getCategoriesList = cache(async function (
