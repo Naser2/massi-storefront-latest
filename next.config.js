@@ -1,6 +1,6 @@
 const { withStoreConfig } = require("./store-config")
 const store = require("./store.config.json")
-
+// connect new Sever
 /**
  * @type {import('next').NextConfig}
  */
